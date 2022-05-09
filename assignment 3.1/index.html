@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <img src="logo.png" alt="" width="25%" height="25%">
+        <div class="nav-links">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="course.html">Course</a></li>
+                <li><a href="department.html">Gallery</a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <br>
+    <div class="slideshow-container">
+
+        <div class="iambrpslides fade">
+            <div class="numbertext"></div>
+            <img src="./images/a.jpg">
+        </div>
+
+        <div class="iambrpslides fade">
+            <div class="numbertext"></div>
+            <img src="./images/b.jpg">
+        </div>
+
+        <div class="iambrpslides fade">
+            <div class="numbertext"></div>
+            <img src="./images/c.jpg">
+        </div>
+
+    </div>
+
+
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("iambrpslides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2500); // This is for Changing image every 2.5 seconds
+        }
+    </script>
+    <br>
+
+    <script type="text/javascript">
+        document.title = "Home";
+    </script>
+
+    <div class="text-box">
+        <h1>SANTHIGIRI COLLEGE</h1>
+
+
+        <div class="link">
+            <a href="" class="hero-btn">Know More</a>
+        </div>
+    </div>
+    <div class="mainContent">
+        <div class="Content">
+            <article class="topContent">
+                <div class="col-sm-6">
+                <header>
+                 <h3><a href="#" title="My First Post">We're Gladly Welcoming You </a>	</h3>  
+                </header>
+            </div>
+                <content>
+    <p>
+        The spirit of inspiration emanated from the public and the CMI Fathers of Carmel Province, Muvattupuzha, Kerala to stand for the cause of the disabled population enabled the foundation of Santhigiri Vocational Training Institute in the year 1993. Santhigiri is a registered, voluntary, charitable organization formed to focus on the imparting quality education. Santhigiri College of Computer Sciences was started in 2002. This institution for higher education is affiliated to MG University, Kottayam and approved by AICTE, Delhi. Santhigiri College has a luminous profile having enchanting success stories without interlude. We offer MCA, MSW, M.Com (Tax & Finance), BCA, BBA, B.Com (Computer Application), B.Com (Tax & Finance), BA Animation & Graphic Design and B.Sc Psychology.
+    
+    </p>
+                </content>
+                </article>
+    <section class="course">
+        <h1>ABOUT US</h1>
+        <div class="row">
+            <div class="course-col">
+        <h3>OUR MISSION</h3>
+        <p>Holistic and Integral development of the individual rooted in faith in God, justice, knowledge and human values.</p>
+            </div>
+            <div class="course-col">
+                <h3>OUR VISSION</h3>
+                <p>Awakening to the Future. Awaken this generation to take up the challenges of tomorrow.</p>
+                    </div>
+                    <div class="course-col">
+                        <h3>OUR MOTTO</h3>
+                        <p>Quality and Excellence</p>
+                            </div>
+        </div>
+    
+        
+    </section>
+    
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="contact-form">
+                        <div class="row">
+                            <form id="contact" action="" method="post">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                      <fieldset>
+                                        <input name="name" type="text" class="form-control" id="name" placeholder="Your name..." required="">
+                                      </fieldset>
+                                    </div>
+                                    <div class="col-md-12">
+                                      <fieldset>
+                                        <input name="email" type="email" class="form-control" id="email" placeholder="Your email..." required="">
+                                      </fieldset>
+                                    </div>
+                                    <div class="col-md-12">
+                                      <fieldset>
+                                        <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required=""></textarea>
+                                      </fieldset>
+                                    </div>
+                                    <div class="col-md-12">
+                                      <fieldset>
+                                        <button type="submit" id="form-submit" class="btn">Send Message</button>
+                                      </fieldset>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="map">
+
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.7733913299157!2d76.64248641458074!3d9.869369792940844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b07c4cd9885e8a3%3A0x2ac6d7bc5f47d21a!2sSanthigiri%20College!5e0!3m2!1sen!2sin!4v1651749589738!5m2!1sen!2sin" width="500" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"width="100%" height="390" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+</body>
+
+</html>
